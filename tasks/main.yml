@@ -11,7 +11,7 @@
   ansible.builtin.git:
     repo: "{{ lighthouse_repo }}"
     dest: "{{ lighthouse_dir }}"
-    version: "{{ lighthouse_version | default('master') }}"
+    version: master
   tags: [lighthouse]
 
 - name: Deploy nginx template
